@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sofia Mae Abao</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Helvetica Neue', sans-serif;
+    background: linear-gradient(120deg, #f8edeb, #fcd5ce);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.container{
+    background:white;
+    padding:60px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    text-align:center;
+    max-width:600px;
+}
+
+h1{
+    font-weight:300;
+}
+
+p{
+    line-height:1.8;
+    color:#555;
+}
+
+button{
+    padding:12px 25px;
+    border:1px solid #b5838d;
+    background:none;
+    color:#b5838d;
+    border-radius:25px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#b5838d;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <h1>Sofia Mae Abao</h1>
+
+    <p>
+    Distance has never changed my intentions.
+    I choose consistency.
+    I choose sincerity.
+    And I choose you.
+    </p>
+
+    <p>
+    I don’t rush love.
+    I build it carefully —
+    with patience and respect.
+    </p>
+
+    <button onclick="window.location.href='loveletter.html'">
+        Read My Letter
+    </button>
+</div>
+
+</body>
+</html>

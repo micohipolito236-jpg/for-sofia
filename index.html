@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Sofia</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #f5ebe0, #e3d5ca);
+}
+
+.container{
+    background:white;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+input{
+    padding:10px;
+    width:200px;
+    border:1px solid #c9ada7;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#b5838d;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>A small surprise for you</h2>
+    <p>Enter the password:</p>
+    <input type="password" id="pass">
+    <br>
+    <button onclick="checkPass()">Enter</button>
+</div>
+
+<script>
+function checkPass(){
+    var password = document.getElementById("pass").value;
+    if(password === "sofia"){
+        window.location.href="sifia.html";
+    }else{
+        alert("Hint: your beautiful name.");
+    }
+}
+</script>
+
+</body>
+</html>
